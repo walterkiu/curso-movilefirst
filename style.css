@@ -228,6 +228,9 @@ border-top-left-radius: 5px;
         padding: 20px 10px;
         min-width: 320px;
         background-color: var(--warm-black);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
     .main-product-detail .papa{
         position: absolute;
@@ -268,6 +271,7 @@ border-top-left-radius: 5px;
         margin: 15px auto;
         padding: 20px 15px;
         width: 90%;
+        min-height: 150px;
         min-width: 288px;
         max-width: 400px;
         border-radius: 5px;
@@ -306,4 +310,22 @@ border-top-left-radius: 5px;
         font-weight: 500;
         color: #808080;
         line-height: 1.8rem;
+    }
+
+    .batabit-img-container{
+        width: 100%;
+        min-width: 320px;
+        height: 50vh;
+        background-image: url(./img/bitcoinbaby2x.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+    }
+    .batabit-img-container h2{
+        color: var(--just-white);
+        font-size: 2.4rem;
+        font-weight: bold;
+        padding-top: 60px;
+        line-height: 2.4rem;
     }
