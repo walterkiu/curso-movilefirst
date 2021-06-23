@@ -327,5 +327,42 @@ border-top-left-radius: 5px;
         font-size: 2.4rem;
         font-weight: bold;
         padding-top: 60px;
-        line-height: 2.4rem;
+    }
+
+    .main-plans-container{
+        text-align: center;
+        width: 100%;
+        min-width: 320px;
+        background-color: var(--of-white);
+        padding:65px 0;
+        
+    }
+    .plans--title{
+        width: 90%;
+        min-width: 288px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .plans--title h2{
+        font-size: 2.4rem;
+        line-height: 2.6rem;
+        font-weight: bold;
+        color: var(--black);
+    }
+    .plans--title p{
+        padding-top: 30px;
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: #757575;
+    }
+    .plans-container--cards{
+        width: 60%;
+        min-width: 192px;
+        max-width: 300px;
+        height: 250px;
+        margin: 0 auto;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgb(0, 0, 0, 0.16) ;
+        background-color: var(--just-white);
+    
     }
