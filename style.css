@@ -35,7 +35,6 @@ font-family: 'DM Sans', sans-serif ;
 header{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     width: 100%;
     min-width: 320px;
     height: 300px;
@@ -265,7 +264,7 @@ border-top-left-radius: 5px;
     }
     .product-cards--container{
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
     }
     .product-detail--card{
         margin: 15px auto;
@@ -355,24 +354,57 @@ border-top-left-radius: 5px;
         font-weight: bold;
         color: #757575;
     }
+    .plans-container--slider{
+        display: flex;
+        height: 316px;
+        overflow-x: scroll;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x proximity;
+    }
     .plans-container--cards{
         position: relative;
-        width: 60%;
-        min-width: 192px;
+        scroll-snap-align: center;
+        width: 70%;
+        align-self: center;
+        min-width: 224px;
         max-width: 250px;
         height: 250px;
-        margin: 0 auto;
+        margin: 5px 30px;
         border-radius: 15px;
         box-shadow: 0 4px 8px rgb(0, 0, 0, 0.16) ;
         background-color: var(--just-white);
     
     }
-    .plans-container--cards .recomendado{
+    .recomendado{
         position: absolute;
         left: calc(50% - 55px);
         top: -15px;
         padding: 10px;
         background-color: var(--bitcoin-orange);
+        color: var(--just-white);
+        font-size: 1.3rem;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+    .basico{
+        position: absolute;
+        left: calc(50% - 55px);
+        top: -15px;
+        padding: 10px;
+        width: 111px;
+        background-color: var(--secondary-blue);
+        color: var(--just-white);
+        font-size: 1.3rem;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+    .premium{
+        position: absolute;
+        left: calc(50% - 55px);
+        top: -15px;
+        padding: 10px;
+        width: 111px;
+        background-color: goldenrod;
         color: var(--just-white);
         font-size: 1.3rem;
         font-weight: bold;
@@ -403,17 +435,21 @@ border-top-left-radius: 5px;
         padding-bottom: 15px;
     }
     .plan-card--button{
-        width: 80%;
+        width: 160px;
         padding: 10px;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         font-weight: bold;
-        background-color: var(--just-white);
-        border: 3px var(--bitcoin-orange) solid;
+        background-color: #faf8f7;
+        border: 2px var(--bitcoin-orange) solid;
         border-radius: 5px;
+        color: var(--black);
+        font-family: 'DM Sans', sans-serif ;
+
     }
     .plan-card--button span{
         width: 20px;
-        height: 10px;
+        height: 20px;
+        vertical-align: text-bottom;
         display: inline-block;
         background-image: url(./icons/orange-right-arrow.svg);
         background-repeat: no-repeat;
