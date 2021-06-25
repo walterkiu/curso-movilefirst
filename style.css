@@ -356,13 +356,68 @@ border-top-left-radius: 5px;
         color: #757575;
     }
     .plans-container--cards{
+        position: relative;
         width: 60%;
         min-width: 192px;
-        max-width: 300px;
+        max-width: 250px;
         height: 250px;
         margin: 0 auto;
         border-radius: 15px;
         box-shadow: 0 4px 8px rgb(0, 0, 0, 0.16) ;
         background-color: var(--just-white);
     
+    }
+    .plans-container--cards .recomendado{
+        position: absolute;
+        left: calc(50% - 55px);
+        top: -15px;
+        padding: 10px;
+        background-color: var(--bitcoin-orange);
+        color: var(--just-white);
+        font-size: 1.3rem;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+    .plan-card--title{
+        padding-top: 40px;
+        padding-bottom: 5px;
+        font-weight: 500;
+        font-size: 1.4rem;
+        color: var(--black);
+    }
+    .plan-card--price{
+        font-size: 4.5rem;
+        font-weight:bold;
+    }
+    .plan-card--price span{
+        font-size: 1.2rem;
+        font-weight: 300;
+        vertical-align: text-top;
+    }
+    .plan-card-saving{
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: #757575;
+        padding-inline: 7px;
+        padding-top: 10px ;
+        padding-bottom: 15px;
+    }
+    .plan-card--button{
+        width: 80%;
+        padding: 10px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        background-color: var(--just-white);
+        border: 3px var(--bitcoin-orange) solid;
+        border-radius: 5px;
+    }
+    .plan-card--button span{
+        width: 20px;
+        height: 10px;
+        display: inline-block;
+        background-image: url(./icons/orange-right-arrow.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin-left: 5px;
     }
