@@ -4,3 +4,12 @@
 .plans-container--slider{
     justify-content: center;
 }
+footer .left ul{
+    display: flex;
+}
+.left ul li{
+    padding-inline:25px;
+}
+.main-exchange-tables_monedas{
+    margin-right: 50px;
+}
